@@ -7,8 +7,8 @@ keyword = 'amazon'
 
 pull_data_to_csv(keyword)
 
-df_dly = pd.read_csv('{}_daily.csv'.format(keyword), index_col=0)
-df_ol = pd.read_csv('{}_overlapping.csv'.format(keyword), index_col=0)
+df_dly = pd.read_csv('data/{}_daily.csv'.format(keyword), index_col=0)
+df_ol = pd.read_csv('data/{}_overlapping.csv'.format(keyword), index_col=0)
 
 # Set date range of df_dly same as ol
 start_d = df_dly.index[0]

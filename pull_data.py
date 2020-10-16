@@ -23,5 +23,5 @@ def pull_data_to_csv(keyword):
 
     daily = pytrend_daily.fetch_data(pytrend, kw_list, timeframe=tf,)
 
-    overlapping.to_csv('{}_overlapping.csv'.format(keyword))
-    daily.to_csv('{}_daily.csv'.format(keyword))
+    overlapping.to_csv('data/{}_overlapping.csv'.format(keyword))
+    daily.to_csv('data/{}_daily.csv'.format(keyword))
